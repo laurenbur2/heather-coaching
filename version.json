@@ -1,12 +1,12 @@
 {
-  "version": "v260414.01 12:48a",
-  "release": 1,
-  "sha": "2225b12",
-  "fullSha": "2225b121cc73d0aa35d4840ea35299b13bb60f30",
+  "version": "v260414.02 12:54a",
+  "release": 2,
+  "sha": "849121e",
+  "fullSha": "849121eab2337beb359bda10a2becb3173bbfff7",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervm35a4x",
-  "pushedAt": "2026-04-13T19:48:12-05:00",
-  "commits": [{"sha":"2225b12","message":"Import alpacapps-infra template baseline","author":"Lauren Burandt"}]
+  "pushedAt": "2026-04-13T19:53:47-05:00",
+  "commits": [{"sha":"849121e","message":"Customize for Heather Coaching: prune unused features, add setup todo","author":"Lauren Burandt"}]
 }
