@@ -1,12 +1,12 @@
 {
-  "version": "v260414.05 1:40a",
-  "release": 5,
-  "sha": "6554196",
-  "fullSha": "65541964fde53fa9109371550ecfa9154a99e5f4",
+  "version": "v260414.06 4:19p",
+  "release": 6,
+  "sha": "6d8ee6c",
+  "fullSha": "6d8ee6cec7ea13732dd89ee7367bc6b83182d33d",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervm35a4x",
-  "pushedAt": "2026-04-13T20:40:36-05:00",
-  "commits": [{"sha":"6554196","message":"Add multi-page structure: about, services, blog, contact","author":"Lauren Burandt"}]
+  "pushedAt": "2026-04-14T11:19:20-05:00",
+  "commits": [{"sha":"6d8ee6c","message":"Deep-nature palette + full-bleed photo hero","author":"Lauren Burandt"}]
 }
