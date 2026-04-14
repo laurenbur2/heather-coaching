@@ -1,12 +1,12 @@
 {
-  "version": "v260414.02 12:54a",
-  "release": 2,
-  "sha": "849121e",
-  "fullSha": "849121eab2337beb359bda10a2becb3173bbfff7",
+  "version": "v260414.03 1:17a",
+  "release": 3,
+  "sha": "3ef52fe",
+  "fullSha": "3ef52fecb3a2356ed5110358017ed2c00bdaf0eb",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervm35a4x",
-  "pushedAt": "2026-04-13T19:53:47-05:00",
-  "commits": [{"sha":"849121e","message":"Customize for Heather Coaching: prune unused features, add setup todo","author":"Lauren Burandt"}]
+  "pushedAt": "2026-04-13T20:17:09-05:00",
+  "commits": [{"sha":"3ef52fe","message":"Wire Supabase project + apply initial booking schema","author":"Lauren Burandt"}]
 }
