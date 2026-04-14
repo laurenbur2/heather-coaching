@@ -1,12 +1,12 @@
 {
-  "version": "v260414.04 1:29a",
-  "release": 4,
-  "sha": "c368f14",
-  "fullSha": "c368f1438b8531cfe93134e3f354856d6c55a99c",
+  "version": "v260414.05 1:40a",
+  "release": 5,
+  "sha": "6554196",
+  "fullSha": "65541964fde53fa9109371550ecfa9154a99e5f4",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervm35a4x",
-  "pushedAt": "2026-04-13T20:29:24-05:00",
-  "commits": [{"sha":"c368f14","message":"Build Clove-inspired homepage: hero, approach, offerings, testimonial, about, CTA","author":"Lauren Burandt"}]
+  "pushedAt": "2026-04-13T20:40:36-05:00",
+  "commits": [{"sha":"6554196","message":"Add multi-page structure: about, services, blog, contact","author":"Lauren Burandt"}]
 }
