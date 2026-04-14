@@ -1,12 +1,12 @@
 {
-  "version": "v260412.01 9:11a",
+  "version": "v260414.01 12:48a",
   "release": 1,
-  "sha": "26938cf",
-  "fullSha": "26938cf21e45632dfed57124d3ecfa053247869b",
-  "actor": "rsonnad",
+  "sha": "2225b12",
+  "fullSha": "2225b121cc73d0aa35d4840ea35299b13bb60f30",
+  "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervm35a4x",
-  "pushedAt": "2026-04-12T04:11:39-05:00",
-  "commits": [{"sha":"26938cf","message":"feat: add UI/UX Pro Max skill and update infra pages","author":"Rahul"}]
+  "pushedAt": "2026-04-13T19:48:12-05:00",
+  "commits": [{"sha":"2225b12","message":"Import alpacapps-infra template baseline","author":"Lauren Burandt"}]
 }
