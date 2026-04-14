@@ -1,6 +1,6 @@
 // Supabase client configuration with auth support
-const SUPABASE_URL = 'YOUR_SUPABASE_URL';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_URL = 'https://oizrxlqxywxjwtmyrpou.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9penJ4bHF4eXd4and0bXlycG91Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYxMjg2OTEsImV4cCI6MjA5MTcwNDY5MX0._RFLsXAHZI8HgajRM4qrbyiJuBO8dD6vWBR6FXTrALQ';
 
 // Wait for Supabase to be available (handles race condition with script loading)
 function waitForSupabase(maxAttempts = 50) {
