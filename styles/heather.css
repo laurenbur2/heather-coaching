@@ -4,24 +4,24 @@
  */
 
 :root {
-  /* Palette — illumination, healing warmth */
-  --cream: #f5ead4;          /* warm honey cream — the ground */
-  --cream-deep: #e8d6b5;     /* deeper warm sand */
-  --charcoal: #2a241c;       /* warm dark earth */
+  /* Palette — dawn breaking, quiet hope after long night */
+  --cream: #f8eedd;          /* dawn cream — warm light with a pink whisper */
+  --cream-deep: #ead7b3;     /* dawn-shadow sand */
+  --charcoal: #2a241c;       /* warm dark earth (the ground we rise from) */
   --charcoal-soft: #4d4338;
-  --forest: #5e7350;         /* PRIMARY — warm sage, light through leaves */
-  --forest-deep: #3d4a32;    /* deeper sage */
-  --forest-soft: #7d9168;    /* lighter sage for hovers */
-  --maroon: #b87a3a;         /* SECONDARY — honey amber, golden hour */
-  --maroon-deep: #8a5520;    /* deeper amber */
-  --maroon-soft: #d99e58;    /* warm gold highlight */
+  --forest: #708c5e;         /* PRIMARY — lifted sage, new growth in morning light */
+  --forest-deep: #4f6940;    /* deeper sage */
+  --forest-soft: #8da775;    /* lighter sage for hovers */
+  --maroon: #cf8a55;         /* SECONDARY — sunrise coral-gold, dawn glow */
+  --maroon-deep: #9c6230;    /* deeper sunrise */
+  --maroon-soft: #e2a978;    /* soft peach highlight */
   /* Legacy tokens mapped to new palette (keeps old class rules working) */
   --sage: var(--forest-soft);
   --sage-deep: var(--forest);
   --terracotta: var(--maroon);
   --terracotta-deep: var(--maroon-deep);
   --muted: #a89380;
-  --hairline: rgba(42, 36, 28, 0.14);
+  --hairline: rgba(42, 36, 28, 0.13);
 
   /* Type */
   --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
@@ -177,7 +177,7 @@ p { margin: 0 0 1em; }
   transition: background 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
 }
 .site-nav.scrolled {
-  background: rgba(245, 234, 212, 0.94);
+  background: rgba(248, 238, 221, 0.94);
   backdrop-filter: blur(8px);
   padding: 0.9rem 0;
   box-shadow: 0 1px 0 var(--hairline);
@@ -237,7 +237,7 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links a {
   color: #f3ede1;
 }
 body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta {
-  background: rgba(245, 234, 212, 0.95);
+  background: rgba(248, 238, 221, 0.95);
   color: var(--forest-deep);
 }
 body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
@@ -298,7 +298,7 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
 }
 
 .hero .eyebrow {
-  color: rgba(245, 234, 212, 0.85);
+  color: rgba(248, 238, 221, 0.85);
 }
 .hero h1 {
   color: #f7f3ec;
@@ -308,7 +308,7 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
   color: #e6c9a8; /* warm cream-gold italic for contrast against green */
 }
 .hero .lede {
-  color: rgba(245, 234, 212, 0.92);
+  color: rgba(248, 238, 221, 0.92);
   max-width: 48ch;
 }
 
@@ -321,10 +321,10 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
 
 .hero .btn-ghost {
   color: #f3ede1;
-  border-color: rgba(245, 234, 212, 0.7);
+  border-color: rgba(248, 238, 221, 0.7);
 }
 .hero .btn-ghost:hover {
-  background: rgba(245, 234, 212, 0.12);
+  background: rgba(248, 238, 221, 0.12);
   color: #fff;
   border-color: #fff;
 }
@@ -449,8 +449,8 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
 .card-featured h3,
 .card-featured .card-price { color: var(--cream); }
 .card-featured .card-kicker,
-.card-featured .card-meta { color: rgba(245, 234, 212, 0.75); }
-.card-featured .card-desc { color: rgba(245, 234, 212, 0.9); }
+.card-featured .card-meta { color: rgba(248, 238, 221, 0.75); }
+.card-featured .card-desc { color: rgba(248, 238, 221, 0.9); }
 .card-featured .btn-primary {
   background: var(--cream);
   color: var(--sage-deep);
@@ -580,7 +580,7 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
 }
 
 .footer-meta {
-  color: rgba(245, 234, 212, 0.6);
+  color: rgba(248, 238, 221, 0.6);
   font-size: 0.9rem;
   margin: 0 0 2rem;
   letter-spacing: 0.08em;
@@ -599,7 +599,7 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
 .footer-links a:hover { opacity: 1; color: var(--terracotta); }
 
 .footer-disclaimer {
-  color: rgba(245, 234, 212, 0.55);
+  color: rgba(248, 238, 221, 0.55);
   font-size: 0.82rem;
   line-height: 1.6;
   max-width: 36rem;
@@ -607,13 +607,13 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
   font-style: italic;
 }
 .footer-disclaimer a {
-  color: rgba(245, 234, 212, 0.85);
-  border-bottom: 1px solid rgba(245, 234, 212, 0.3);
+  color: rgba(248, 238, 221, 0.85);
+  border-bottom: 1px solid rgba(248, 238, 221, 0.3);
 }
 .footer-disclaimer a:hover { color: var(--terracotta); }
 
 .footer-fine {
-  color: rgba(245, 234, 212, 0.4);
+  color: rgba(248, 238, 221, 0.4);
   font-size: 0.78rem;
   letter-spacing: 0.06em;
   margin: 0;
