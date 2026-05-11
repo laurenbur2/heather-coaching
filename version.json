@@ -1,12 +1,12 @@
 {
-  "version": "v260414.06 4:19p",
-  "release": 6,
-  "sha": "6d8ee6c",
-  "fullSha": "6d8ee6cec7ea13732dd89ee7367bc6b83182d33d",
+  "version": "v260511.01 8:32p",
+  "release": 1,
+  "sha": "53027ca",
+  "fullSha": "53027ca15a0c5e103eebff544bffe4b536c7d1b9",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
-  "machine": "runnervm35a4x",
-  "pushedAt": "2026-04-14T11:19:20-05:00",
-  "commits": [{"sha":"6d8ee6c","message":"Deep-nature palette + full-bleed photo hero","author":"Lauren Burandt"}]
+  "machine": "runnervmeorf1",
+  "pushedAt": "2026-05-11T15:31:53-05:00",
+  "commits": [{"sha":"53027ca","message":"Rebrand to Illuminated Integration with warm illumination palette","author":"Lauren Burandt"}]
 }
