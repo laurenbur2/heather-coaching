@@ -1,12 +1,12 @@
 {
-  "version": "v260511.01 8:32p",
-  "release": 1,
-  "sha": "53027ca",
-  "fullSha": "53027ca15a0c5e103eebff544bffe4b536c7d1b9",
+  "version": "v260511.02 8:40p",
+  "release": 2,
+  "sha": "2c0989f",
+  "fullSha": "2c0989f87bc2d8fc67277785e235b717b8c0cf56",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervmeorf1",
-  "pushedAt": "2026-05-11T15:31:53-05:00",
-  "commits": [{"sha":"53027ca","message":"Rebrand to Illuminated Integration with warm illumination palette","author":"Lauren Burandt"}]
+  "pushedAt": "2026-05-11T15:40:26-05:00",
+  "commits": [{"sha":"2c0989f","message":"Refine Blue Morpho favicon for realism","author":"Lauren Burandt"}]
 }
