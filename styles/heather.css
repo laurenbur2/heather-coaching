@@ -4,24 +4,24 @@
  */
 
 :root {
-  /* Palette — dawn breaking, quiet hope after long night */
-  --cream: #f8eedd;          /* dawn cream — warm light with a pink whisper */
-  --cream-deep: #ead7b3;     /* dawn-shadow sand */
-  --charcoal: #2a241c;       /* warm dark earth (the ground we rise from) */
-  --charcoal-soft: #4d4338;
-  --forest: #708c5e;         /* PRIMARY — lifted sage, new growth in morning light */
-  --forest-deep: #4f6940;    /* deeper sage */
-  --forest-soft: #8da775;    /* lighter sage for hovers */
-  --maroon: #cf8a55;         /* SECONDARY — sunrise coral-gold, dawn glow */
-  --maroon-deep: #9c6230;    /* deeper sunrise */
-  --maroon-soft: #e2a978;    /* soft peach highlight */
+  /* Palette — Stone & Moss: editorial, cool, grounded */
+  --cream: #ece8db;          /* cool mineral oat — chalk with a green whisper */
+  --cream-deep: #d2ccbb;     /* warm stone */
+  --charcoal: #1c1f1d;       /* deep slate — cool, anchored */
+  --charcoal-soft: #424845;
+  --forest: #2e3d34;         /* PRIMARY — deep grounded moss */
+  --forest-deep: #1d2a23;    /* near-black moss */
+  --forest-soft: #4a5e51;    /* lighter moss for hovers */
+  --maroon: #8a4f3c;         /* SECONDARY — muted clay-terracotta, low and grounded */
+  --maroon-deep: #5a3324;    /* deep clay */
+  --maroon-soft: #a86852;    /* aged copper highlight */
   /* Legacy tokens mapped to new palette (keeps old class rules working) */
   --sage: var(--forest-soft);
   --sage-deep: var(--forest);
   --terracotta: var(--maroon);
   --terracotta-deep: var(--maroon-deep);
-  --muted: #a89380;
-  --hairline: rgba(42, 36, 28, 0.13);
+  --muted: #9c9486;
+  --hairline: rgba(28, 31, 29, 0.12);
 
   /* Type */
   --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
@@ -177,7 +177,7 @@ p { margin: 0 0 1em; }
   transition: background 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
 }
 .site-nav.scrolled {
-  background: rgba(248, 238, 221, 0.94);
+  background: rgba(236, 232, 219, 0.94);
   backdrop-filter: blur(8px);
   padding: 0.9rem 0;
   box-shadow: 0 1px 0 var(--hairline);
@@ -231,18 +231,18 @@ p { margin: 0 0 1em; }
   .nav-links a:not(.nav-cta) { display: none; }
 }
 
-/* Transparent nav over the home hero (until scrolled) */
-body:not(.page-inner) .site-nav:not(.scrolled) .brand,
-body:not(.page-inner) .site-nav:not(.scrolled) .nav-links a {
-  color: #f3ede1;
+/* Transparent nav over any hero (until scrolled) — applies to all pages */
+.site-nav:not(.scrolled) .brand,
+.site-nav:not(.scrolled) .nav-links a {
+  color: #ece8db;
 }
-body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta {
-  background: rgba(248, 238, 221, 0.95);
+.site-nav:not(.scrolled) .nav-links .nav-cta {
+  background: rgba(236, 232, 219, 0.95);
   color: var(--forest-deep);
 }
-body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
+.site-nav:not(.scrolled) .nav-links .nav-cta:hover {
   background: var(--maroon);
-  color: #f3ede1;
+  color: #ece8db;
 }
 
 /* =============================================
@@ -269,8 +269,8 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(180deg, rgba(42, 32, 18, 0.30) 0%, rgba(42, 32, 18, 0.10) 35%, rgba(42, 32, 18, 0.75) 100%),
-    url('https://images.pexels.com/photos/35292489/pexels-photo-35292489.jpeg?auto=compress&cs=tinysrgb&w=2400');
+    linear-gradient(180deg, rgba(20, 25, 22, 0.32) 0%, rgba(20, 25, 22, 0.08) 35%, rgba(20, 25, 22, 0.78) 100%),
+    url('https://images.pexels.com/photos/34968719/pexels-photo-34968719.jpeg?auto=compress&cs=tinysrgb&w=2400');
   background-size: cover;
   background-position: center;
   color: transparent;
@@ -281,7 +281,7 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 55%, rgba(42, 32, 18, 0.80) 100%);
+  background: linear-gradient(180deg, transparent 55%, rgba(20, 25, 22, 0.82) 100%);
   z-index: -1;
   pointer-events: none;
 }
@@ -298,17 +298,17 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
 }
 
 .hero .eyebrow {
-  color: rgba(248, 238, 221, 0.85);
+  color: rgba(236, 232, 219, 0.85);
 }
 .hero h1 {
   color: #f7f3ec;
   text-shadow: 0 2px 30px rgba(0,0,0,0.35);
 }
 .hero h1 em {
-  color: #e6c9a8; /* warm cream-gold italic for contrast against green */
+  color: #c8c4b2; /* cool stone-cream italic, low contrast against deep palette */
 }
 .hero .lede {
-  color: rgba(248, 238, 221, 0.92);
+  color: rgba(236, 232, 219, 0.92);
   max-width: 48ch;
 }
 
@@ -321,10 +321,10 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
 
 .hero .btn-ghost {
   color: #f3ede1;
-  border-color: rgba(248, 238, 221, 0.7);
+  border-color: rgba(236, 232, 219, 0.7);
 }
 .hero .btn-ghost:hover {
-  background: rgba(248, 238, 221, 0.12);
+  background: rgba(236, 232, 219, 0.12);
   color: #fff;
   border-color: #fff;
 }
@@ -449,8 +449,8 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
 .card-featured h3,
 .card-featured .card-price { color: var(--cream); }
 .card-featured .card-kicker,
-.card-featured .card-meta { color: rgba(248, 238, 221, 0.75); }
-.card-featured .card-desc { color: rgba(248, 238, 221, 0.9); }
+.card-featured .card-meta { color: rgba(236, 232, 219, 0.75); }
+.card-featured .card-desc { color: rgba(236, 232, 219, 0.9); }
 .card-featured .btn-primary {
   background: var(--cream);
   color: var(--sage-deep);
@@ -580,7 +580,7 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
 }
 
 .footer-meta {
-  color: rgba(248, 238, 221, 0.6);
+  color: rgba(236, 232, 219, 0.6);
   font-size: 0.9rem;
   margin: 0 0 2rem;
   letter-spacing: 0.08em;
@@ -599,7 +599,7 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
 .footer-links a:hover { opacity: 1; color: var(--terracotta); }
 
 .footer-disclaimer {
-  color: rgba(248, 238, 221, 0.55);
+  color: rgba(236, 232, 219, 0.55);
   font-size: 0.82rem;
   line-height: 1.6;
   max-width: 36rem;
@@ -607,13 +607,13 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
   font-style: italic;
 }
 .footer-disclaimer a {
-  color: rgba(248, 238, 221, 0.85);
-  border-bottom: 1px solid rgba(248, 238, 221, 0.3);
+  color: rgba(236, 232, 219, 0.85);
+  border-bottom: 1px solid rgba(236, 232, 219, 0.3);
 }
 .footer-disclaimer a:hover { color: var(--terracotta); }
 
 .footer-fine {
-  color: rgba(248, 238, 221, 0.4);
+  color: rgba(236, 232, 219, 0.4);
   font-size: 0.78rem;
   letter-spacing: 0.06em;
   margin: 0;
@@ -627,9 +627,9 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
 }
-/* Over dark hero (home), active link uses warm cream */
-body:not(.page-inner) .site-nav:not(.scrolled) .nav-link-active {
-  color: #e6c9a8 !important;
+/* Over dark hero (any page), active link uses cool stone-cream */
+.site-nav:not(.scrolled) .nav-link-active {
+  color: #c8c4b2 !important;
 }
 
 /* =============================================
@@ -650,6 +650,74 @@ body:not(.page-inner) .site-nav:not(.scrolled) .nav-link-active {
   margin-left: auto;
   margin-right: auto;
   max-width: 48ch;
+}
+
+/* =============================================
+   PAGE HERO (inner page banner with photo)
+   ============================================= */
+.page-hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  overflow: hidden;
+  color: #ece8db;
+  isolation: isolate;
+  margin-bottom: 4rem;
+}
+.page-hero-photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-size: cover;
+  background-position: center;
+}
+.page-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(20, 25, 22, 0.50) 0%, rgba(20, 25, 22, 0.15) 30%, rgba(20, 25, 22, 0.82) 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+.page-hero-content {
+  padding: calc(var(--gutter) * 1.5) calc(var(--gutter) * 1.5);
+  padding-bottom: calc(var(--gutter) * 1.75);
+  max-width: 820px;
+  width: 100%;
+  margin: 0 auto 0 var(--gutter);
+}
+.page-hero .eyebrow {
+  color: rgba(236, 232, 219, 0.85);
+}
+.page-hero h1 {
+  color: #ece8db;
+  font-size: clamp(2.2rem, 5vw, 3.75rem);
+  margin: 0 0 1rem;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.35);
+}
+.page-hero h1 em {
+  color: #c8c4b2;
+}
+.page-hero .lede {
+  color: rgba(236, 232, 219, 0.92);
+  max-width: 48ch;
+}
+
+/* Per-page hero photos (Pexels) */
+.page-hero-about .page-hero-photo {
+  background-image: url('https://images.pexels.com/photos/36620599/pexels-photo-36620599.jpeg?auto=compress&cs=tinysrgb&w=2400');
+}
+.page-hero-services .page-hero-photo {
+  background-image: url('https://images.pexels.com/photos/15462610/pexels-photo-15462610.jpeg?auto=compress&cs=tinysrgb&w=2400');
+}
+.page-hero-contact .page-hero-photo {
+  background-image: url('https://images.pexels.com/photos/35993583/pexels-photo-35993583.jpeg?auto=compress&cs=tinysrgb&w=2400');
+}
+.page-hero-blog .page-hero-photo {
+  background-image: url('https://images.pexels.com/photos/37323042/pexels-photo-37323042.jpeg?auto=compress&cs=tinysrgb&w=2400');
 }
 
 .col-text-wide { max-width: 56ch; }
