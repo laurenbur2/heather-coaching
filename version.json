@@ -1,12 +1,12 @@
 {
-  "version": "v260511.02 8:40p",
-  "release": 2,
-  "sha": "2c0989f",
-  "fullSha": "2c0989f87bc2d8fc67277785e235b717b8c0cf56",
+  "version": "v260511.03 8:47p",
+  "release": 3,
+  "sha": "51ede0f",
+  "fullSha": "51ede0f501a507201c86b403fb66c30d07a67280",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervmeorf1",
-  "pushedAt": "2026-05-11T15:40:26-05:00",
-  "commits": [{"sha":"2c0989f","message":"Refine Blue Morpho favicon for realism","author":"Lauren Burandt"}]
+  "pushedAt": "2026-05-11T15:47:05-05:00",
+  "commits": [{"sha":"51ede0f","message":"Fix broken inner-page rendering on GitHub Pages project site","author":"Lauren Burandt"}]
 }
