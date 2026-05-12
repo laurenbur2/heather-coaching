@@ -1,12 +1,12 @@
 {
-  "version": "v260512.02 3:45p",
-  "release": 2,
-  "sha": "263b928",
-  "fullSha": "263b928b0ef2ca8c249b76852e0229d7097c85df",
+  "version": "v260512.03 3:49p",
+  "release": 3,
+  "sha": "ee354e5",
+  "fullSha": "ee354e58e8c95da7890c69902905add82eebdf11",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervmeorf1",
-  "pushedAt": "2026-05-12T10:45:37-05:00",
-  "commits": [{"sha":"263b928","message":"Reorganize \"Is this for you?\" cards to 2x2 grid with icons","author":"Lauren Burandt"}]
+  "pushedAt": "2026-05-12T10:49:25-05:00",
+  "commits": [{"sha":"ee354e5","message":"Alternate section backgrounds for visual rhythm","author":"Lauren Burandt"}]
 }
