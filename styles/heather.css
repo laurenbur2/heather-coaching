@@ -227,8 +227,43 @@ p { margin: 0 0 1em; }
   color: var(--cream);
 }
 
+/* Hamburger toggle — hidden on desktop, shown on mobile */
+.nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  -webkit-tap-highlight-color: transparent;
+}
+.nav-toggle-bar {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--charcoal);
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.2s ease, background 0.2s ease;
+  transform-origin: center;
+}
+.site-nav:not(.scrolled) .nav-toggle-bar { background: #ece8db; }
+.nav-toggle.is-open .nav-toggle-bar:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-toggle.is-open .nav-toggle-bar:nth-child(2) { opacity: 0; }
+.nav-toggle.is-open .nav-toggle-bar:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
 @media (max-width: 720px) {
-  .nav-links a:not(.nav-cta) { display: none; }
+  .site-nav { padding: 0.65rem 0; }
+  .site-nav.scrolled { padding: 0.5rem 0; }
+  .nav-inner { gap: 1rem; }
+  .brand { font-size: 1.15rem; }
+  .nav-links { display: none; }
+  .nav-toggle { display: inline-flex; }
 }
 
 /* Transparent nav over any hero (until scrolled) — applies to all pages */
@@ -243,6 +278,118 @@ p { margin: 0 0 1em; }
 .site-nav:not(.scrolled) .nav-links .nav-cta:hover {
   background: var(--maroon);
   color: #ece8db;
+}
+
+/* =============================================
+   MOBILE DRAWER
+   ============================================= */
+.mobile-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  visibility: hidden;
+  transition: visibility 0s linear 0.35s;
+}
+.mobile-drawer.is-open {
+  pointer-events: auto;
+  visibility: visible;
+  transition: visibility 0s linear 0s;
+}
+.mobile-drawer-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 25, 22, 0.55);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.mobile-drawer.is-open .mobile-drawer-backdrop { opacity: 1; }
+.mobile-drawer-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(86vw, 360px);
+  background: var(--cream);
+  padding: 5rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -10px 0 30px -10px rgba(20, 25, 22, 0.25);
+  transform: translateX(100%);
+  transition: transform 0.32s cubic-bezier(0.22, 0.7, 0.25, 1);
+}
+.mobile-drawer.is-open .mobile-drawer-panel { transform: translateX(0); }
+.mobile-drawer-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  color: var(--charcoal);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.mobile-drawer-close:hover { color: var(--terracotta); }
+.mobile-drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.mobile-drawer-links a {
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  font-weight: 400;
+  color: var(--charcoal);
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--hairline);
+  letter-spacing: -0.01em;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+.mobile-drawer-links a:hover,
+.mobile-drawer-links a.nav-link-active {
+  color: var(--sage-deep);
+  padding-left: 0.35rem;
+}
+.mobile-drawer-cta {
+  margin-top: 1.5rem;
+  background: var(--forest);
+  color: var(--cream) !important;
+  text-align: center;
+  border-radius: 999px;
+  border-bottom: none !important;
+  padding: 0.95rem 1.5rem !important;
+  font-family: var(--sans) !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.04em;
+}
+.mobile-drawer-cta:hover {
+  background: var(--maroon);
+  color: var(--cream) !important;
+  padding-left: 1.5rem !important;
+}
+.mobile-drawer-footer {
+  margin: auto 0 0;
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  color: var(--charcoal-soft);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+.mobile-drawer-footer span {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 /* =============================================
@@ -1095,3 +1242,37 @@ section.section:nth-of-type(even) {
   line-height: 1.7;
 }
 .contact-aside li { margin-bottom: 0.4rem; }
+
+/* =============================================
+   MOBILE POLISH (≤720px)
+   - Larger tap targets, full-width CTAs, tighter rhythm
+   ============================================= */
+@media (max-width: 720px) {
+  /* CTAs stack full-width and are easier to tap */
+  .hero-ctas { flex-direction: column; align-items: stretch; gap: 0.7rem; width: 100%; max-width: 320px; }
+  .hero-ctas .btn { width: 100%; text-align: center; padding: 1.05rem 1.5rem; font-size: 0.95rem; }
+
+  /* Slightly more breathing room above content so nav doesn't crowd hero */
+  .hero { min-height: 92vh; }
+  .hero-content { padding-bottom: calc(var(--gutter) * 2.25); }
+
+  /* Section spacing dialed in for small screens */
+  .section { padding-left: var(--gutter); padding-right: var(--gutter); }
+  .section-header { margin-bottom: 2.5rem; }
+
+  /* Cards: more padding so taps feel comfortable */
+  .card { padding: 1.75rem 1.5rem; }
+  .card .btn { width: 100%; text-align: center; }
+
+  /* Form inputs sized for thumbs (prevents iOS zoom on focus) */
+  .contact-form input,
+  .contact-form textarea { font-size: 16px; padding: 1rem; }
+  .contact-form .btn { width: 100%; padding: 1.05rem 1.5rem; }
+
+  /* FAQ summary tap target */
+  .faq-list summary { padding: 0.25rem 0; }
+  .faq-list details { padding: 1.25rem 0; }
+
+  /* Footer rhythm */
+  .footer-links { line-height: 2.2; }
+}
