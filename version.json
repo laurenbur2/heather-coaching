@@ -1,12 +1,12 @@
 {
-  "version": "v260512.03 3:49p",
-  "release": 3,
-  "sha": "ee354e5",
-  "fullSha": "ee354e58e8c95da7890c69902905add82eebdf11",
+  "version": "v260512.04 3:59p",
+  "release": 4,
+  "sha": "620ad96",
+  "fullSha": "620ad960b54f3ca823cd4a42cd1c57452fab3011",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervmeorf1",
-  "pushedAt": "2026-05-12T10:49:25-05:00",
-  "commits": [{"sha":"ee354e5","message":"Alternate section backgrounds for visual rhythm","author":"Lauren Burandt"}]
+  "pushedAt": "2026-05-12T10:59:30-05:00",
+  "commits": [{"sha":"620ad96","message":"Redesign 'Is this for you?' icons — circular badges + refined symbols","author":"Lauren Burandt"}]
 }
