@@ -814,7 +814,7 @@ section.section:nth-of-type(even) {
    ============================================= */
 .page-hero {
   position: relative;
-  min-height: 60vh;
+  min-height: 80vh;
   display: flex;
   align-items: flex-end;
   padding: 0;
@@ -822,6 +822,9 @@ section.section:nth-of-type(even) {
   color: #ece8db;
   isolation: isolate;
   margin-bottom: 4rem;
+}
+@media (max-width: 720px) {
+  .page-hero { min-height: 72vh; margin-bottom: 2.5rem; }
 }
 .page-hero-photo {
   position: absolute;
