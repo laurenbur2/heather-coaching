@@ -1,12 +1,12 @@
 {
-  "version": "v260512.10 6:19p",
-  "release": 10,
-  "sha": "0d29993",
-  "fullSha": "0d299939385b6caa5c74cde37b4e960b46677c6b",
+  "version": "v260512.11 6:26p",
+  "release": 11,
+  "sha": "764e241",
+  "fullSha": "764e2415033fd08c3eb31d6234b0b99d75cbc64e",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervmeorf1",
-  "pushedAt": "2026-05-12T13:19:20-05:00",
-  "commits": [{"sha":"0d29993","message":"Wire real photos into the Field Notes essay cards","author":"Lauren Burandt"}]
+  "pushedAt": "2026-05-12T13:26:10-05:00",
+  "commits": [{"sha":"764e241","message":"Extend inner-page hero photos from 60vh to 80vh","author":"Lauren Burandt"}]
 }
