@@ -1,12 +1,12 @@
 {
-  "version": "v260512.07 4:16p",
-  "release": 7,
-  "sha": "455bdff",
-  "fullSha": "455bdff54d7b419b1fe9b12ebb14596796a51c7f",
+  "version": "v260512.08 5:51p",
+  "release": 8,
+  "sha": "c4e76c4",
+  "fullSha": "c4e76c4639dc50200125a4fd162bec951e5de5f2",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervmeorf1",
-  "pushedAt": "2026-05-12T11:16:06-05:00",
-  "commits": [{"sha":"455bdff","message":"Draw 'Carrying' icon as two outlined hands with fingers","author":"Lauren Burandt"}]
+  "pushedAt": "2026-05-12T12:50:47-05:00",
+  "commits": [{"sha":"c4e76c4","message":"Add mobile hamburger menu + drawer; polish mobile UX","author":"Lauren Burandt"}]
 }
