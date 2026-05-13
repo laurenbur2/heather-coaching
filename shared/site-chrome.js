@@ -19,8 +19,11 @@
     <nav class="site-nav" id="siteNav">
       <div class="nav-inner">
         <a href="${base}" class="brand-mark" aria-label="Illuminated Integration — home">
-          <span class="brand-mark-top">Illuminated</span>
-          <span class="brand-mark-script">Integration</span>
+          <img class="brand-mark-icon" src="${base}assets/branding/logo-mark.png" alt="" aria-hidden="true">
+          <span class="brand-mark-text">
+            <span class="brand-mark-top">Illuminated</span>
+            <span class="brand-mark-script">Integration</span>
+          </span>
         </a>
         <div class="nav-links">
           <a href="${base}">Home</a>
