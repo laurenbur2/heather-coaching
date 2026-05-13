@@ -1,12 +1,12 @@
 {
-  "version": "v260513.13 9:24p",
-  "release": 13,
-  "sha": "ba269da",
-  "fullSha": "ba269da79b8d3c8be33e3bbcc4810917d11b5ad4",
+  "version": "v260513.14 9:37p",
+  "release": 14,
+  "sha": "348271e",
+  "fullSha": "348271ef4c0e45482986cfd28657e105e8ddf5c3",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervmeorf1",
-  "pushedAt": "2026-05-13T16:23:40-05:00",
-  "commits": [{"sha":"ba269da","message":"Rework hero copy with three-part promise","author":"Lauren Burandt"}]
+  "pushedAt": "2026-05-13T16:37:24-05:00",
+  "commits": [{"sha":"348271e","message":"Reframe \"Is this for you?\" around wholeness","author":"Lauren Burandt"}]
 }
