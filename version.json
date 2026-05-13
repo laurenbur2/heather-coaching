@@ -1,12 +1,12 @@
 {
-  "version": "v260513.14 9:37p",
-  "release": 14,
-  "sha": "348271e",
-  "fullSha": "348271ef4c0e45482986cfd28657e105e8ddf5c3",
+  "version": "v260513.15 9:48p",
+  "release": 15,
+  "sha": "0284cfd",
+  "fullSha": "0284cfd56bda1b315f1e7271ca80b48042430500",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervmeorf1",
-  "pushedAt": "2026-05-13T16:37:24-05:00",
-  "commits": [{"sha":"348271e","message":"Reframe \"Is this for you?\" around wholeness","author":"Lauren Burandt"}]
+  "pushedAt": "2026-05-13T16:48:06-05:00",
+  "commits": [{"sha":"0284cfd","message":"Lead with psychedelic integration on About hero, specify LMT credential","author":"Lauren Burandt"}]
 }
