@@ -1,12 +1,12 @@
 {
-  "version": "v260513.03 4:00p",
-  "release": 3,
-  "sha": "cca1293",
-  "fullSha": "cca1293f728b0cf1e3a767b827586cad9aea3219",
+  "version": "v260513.04 4:01p",
+  "release": 4,
+  "sha": "2190ce9",
+  "fullSha": "2190ce95d12025d039a05c2f4115d3d388f89ba1",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervmeorf1",
-  "pushedAt": "2026-05-13T11:00:06-05:00",
-  "commits": [{"sha":"cca1293","message":"Lead with transformational coaching, elevate offering copy","author":"Lauren Burandt"}]
+  "pushedAt": "2026-05-13T11:01:00-05:00",
+  "commits": [{"sha":"2190ce9","message":"Use Heather's language for the home hero lede","author":"Lauren Burandt"}]
 }
