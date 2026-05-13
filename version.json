@@ -1,12 +1,12 @@
 {
-  "version": "v260513.07 4:31p",
-  "release": 7,
-  "sha": "6327488",
-  "fullSha": "63274886a50aadafca81345b9be2c86344d51658",
+  "version": "v260513.08 4:35p",
+  "release": 8,
+  "sha": "b91f89f",
+  "fullSha": "b91f89fa4c4957a042a765c14fa49f9c16d5458c",
   "actor": "laurenbur2",
   "source": "cloudflare-pages-deploy",
   "model": "ci",
   "machine": "runnervmeorf1",
-  "pushedAt": "2026-05-13T11:30:46-05:00",
-  "commits": [{"sha":"6327488","message":"Tighten the home Approach section","author":"Lauren Burandt"}]
+  "pushedAt": "2026-05-13T11:34:55-05:00",
+  "commits": [{"sha":"b91f89f","message":"Refine Services dropdown — translucent plum, gold filigree, fix contrast","author":"Lauren Burandt"}]
 }
