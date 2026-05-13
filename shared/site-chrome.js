@@ -31,22 +31,10 @@
               <svg class="nav-caret" viewBox="0 0 8 5" aria-hidden="true"><path d="M0 0h8L4 5z"/></svg>
             </a>
             <div class="nav-dropdown-menu" role="menu">
-              <a href="${base}services/coaching/" role="menuitem">
-                <span class="dropdown-kicker">Coaching</span>
-                Transformational Coaching
-              </a>
-              <a href="${base}services/integration/" role="menuitem">
-                <span class="dropdown-kicker">Integration</span>
-                Psychedelic Preparation &amp; Integration
-              </a>
-              <a href="${base}services/somatic/" role="menuitem">
-                <span class="dropdown-kicker">Embodiment</span>
-                Somatic Healing &amp; Bodywork
-              </a>
-              <a href="${base}services/ceremonial/" role="menuitem">
-                <span class="dropdown-kicker">Sacred Container</span>
-                Private Ceremonial Support
-              </a>
+              <a href="${base}services/coaching/" role="menuitem">Transformational Coaching</a>
+              <a href="${base}services/integration/" role="menuitem">Psychedelic Preparation &amp; Integration</a>
+              <a href="${base}services/somatic/" role="menuitem">Somatic Healing &amp; Bodywork</a>
+              <a href="${base}services/ceremonial/" role="menuitem">Private Ceremonial Support</a>
               <a href="${base}services/" class="dropdown-all" role="menuitem">All offerings</a>
             </div>
           </div>

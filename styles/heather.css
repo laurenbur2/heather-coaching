@@ -315,16 +315,15 @@ p { margin: 0 0 1em; }
   position: absolute;
   top: calc(100% + 0.9rem);
   left: 50%;
-  min-width: 340px;
-  background: rgba(36, 15, 43, 0.78);
-  backdrop-filter: blur(22px) saturate(160%);
-  -webkit-backdrop-filter: blur(22px) saturate(160%);
-  border-radius: var(--radius-lg);
-  padding: 0.5rem 0;
+  min-width: 360px;
+  background: rgba(244, 237, 226, 0.78);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  border-radius: 0;
+  padding: 0;
   box-shadow:
-    0 24px 56px -16px rgba(0, 0, 0, 0.55),
-    0 0 0 1px rgba(212, 185, 119, 0.32),
-    0 1px 0 rgba(212, 185, 119, 0.18) inset;
+    0 22px 50px -16px rgba(36, 15, 43, 0.32),
+    0 0 0 1px rgba(184, 148, 94, 0.28);
   opacity: 0;
   visibility: hidden;
   transform: translate(-50%, -6px);
@@ -346,59 +345,44 @@ p { margin: 0 0 1em; }
   right: 0;
   height: 0.9rem;
 }
-/* Force colors regardless of nav transparent/scrolled state */
-.nav-dropdown-menu a,
-.site-nav:not(.scrolled) .nav-dropdown-menu a,
-.site-nav.scrolled .nav-dropdown-menu a {
+/* Force colors regardless of nav transparent/scrolled state — match nav font.
+   Extra .nav-links specificity beats the transparent-nav cream cascade. */
+.site-nav .nav-links .nav-dropdown-menu a,
+.site-nav:not(.scrolled) .nav-links .nav-dropdown-menu a,
+.site-nav.scrolled .nav-links .nav-dropdown-menu a {
   display: block;
-  padding: 0.85rem 1.6rem;
-  font-family: var(--serif);
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: -0.005em;
-  text-transform: none;
-  color: var(--cream);
-  border-bottom: 1px solid rgba(212, 185, 119, 0.14);
+  padding: 1.05rem 1.6rem;
+  font-family: var(--tracked);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  border-bottom: 1px solid rgba(42, 21, 48, 0.10);
   text-shadow: none;
   transition: background 0.16s ease, color 0.16s ease, padding-left 0.16s ease;
-  line-height: 1.35;
+  line-height: 1.45;
 }
-.nav-dropdown-menu a:last-of-type { border-bottom: none; }
-.nav-dropdown-menu a:hover,
-.site-nav:not(.scrolled) .nav-dropdown-menu a:hover,
-.site-nav.scrolled .nav-dropdown-menu a:hover {
-  background: rgba(212, 185, 119, 0.10);
-  color: var(--gold-soft);
+.site-nav .nav-links .nav-dropdown-menu a:last-of-type { border-bottom: none; }
+.site-nav .nav-links .nav-dropdown-menu a:hover,
+.site-nav:not(.scrolled) .nav-links .nav-dropdown-menu a:hover,
+.site-nav.scrolled .nav-links .nav-dropdown-menu a:hover {
+  background: rgba(184, 148, 94, 0.14);
+  color: var(--gold-deep);
   padding-left: 1.85rem;
 }
-.nav-dropdown-menu .dropdown-kicker {
-  display: block;
-  font-family: var(--tracked);
-  font-size: 0.62rem;
-  font-weight: 500;
-  letter-spacing: 0.26em;
-  text-transform: uppercase;
-  color: var(--gold-soft);
-  opacity: 0.85;
-  margin-bottom: 0.25rem;
-}
-.nav-dropdown-menu a:hover .dropdown-kicker { opacity: 1; }
-.nav-dropdown-menu .dropdown-all,
-.site-nav:not(.scrolled) .nav-dropdown-menu .dropdown-all,
-.site-nav.scrolled .nav-dropdown-menu .dropdown-all {
-  border-top: 1px solid rgba(212, 185, 119, 0.28);
-  margin-top: 0.35rem;
-  padding-top: 1rem;
-  font-family: var(--tracked);
-  font-size: 0.68rem;
-  letter-spacing: 0.26em;
-  text-transform: uppercase;
-  color: var(--gold-soft);
+.site-nav .nav-links .nav-dropdown-menu .dropdown-all,
+.site-nav:not(.scrolled) .nav-links .nav-dropdown-menu .dropdown-all,
+.site-nav.scrolled .nav-links .nav-dropdown-menu .dropdown-all {
+  border-top: 1px solid rgba(184, 148, 94, 0.36);
+  font-size: 0.66rem;
+  letter-spacing: 0.24em;
+  color: var(--gold-deep);
   border-bottom: none;
 }
-.nav-dropdown-menu .dropdown-all:hover {
-  color: var(--cream);
-  background: rgba(212, 185, 119, 0.08);
+.site-nav .nav-links .nav-dropdown-menu .dropdown-all:hover {
+  color: var(--plum);
+  background: rgba(184, 148, 94, 0.12);
 }
 
 /* Mobile drawer — services sub-section */
