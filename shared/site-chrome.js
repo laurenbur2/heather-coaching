@@ -27,22 +27,24 @@
         </a>
         <div class="nav-links">
           <a href="${base}">Home</a>
-          <a href="${base}about/">About</a>
+          <a href="${base}about/">About Heather</a>
+          <a href="${base}philosophy/">Philosophy</a>
           <div class="nav-dropdown">
             <a href="${base}services/" class="nav-dropdown-trigger" aria-haspopup="true">
-              Services
+              Work Together
               <svg class="nav-caret" viewBox="0 0 8 5" aria-hidden="true"><path d="M0 0h8L4 5z"/></svg>
             </a>
             <div class="nav-dropdown-menu" role="menu">
-              <a href="${base}services/coaching/" role="menuitem">Transformational Coaching</a>
+              <a href="${base}services/coaching/" role="menuitem">Transformational Support</a>
               <a href="${base}services/integration/" role="menuitem">Psychedelic Preparation &amp; Integration</a>
-              <a href="${base}services/somatic/" role="menuitem">Somatic Healing &amp; Bodywork</a>
-              <a href="${base}services/ceremonial/" role="menuitem">Plant Medicine &amp; Ceremonial Support</a>
+              <a href="${base}services/somatic/" role="menuitem">Somatic Healing &amp; Therapeutic Bodywork</a>
+              <a href="${base}services/ceremonial/" role="menuitem">Ceremonial &amp; Expanded-State Support</a>
               <a href="${base}services/" class="dropdown-all" role="menuitem">All offerings</a>
             </div>
           </div>
-          <a href="${base}blog/">Writing</a>
-          <a href="${base}contact/" class="nav-cta">Begin</a>
+          <a href="${base}blog/">Journal</a>
+          <a href="${base}safety/">Safety &amp; Scope</a>
+          <a href="${base}contact/" class="nav-cta">Begin Here</a>
         </div>
         <button
           type="button"
@@ -64,19 +66,21 @@
         <button type="button" class="mobile-drawer-close" data-drawer-close aria-label="Close menu">&times;</button>
         <nav class="mobile-drawer-links">
           <a href="${base}">Home</a>
-          <a href="${base}about/">About</a>
+          <a href="${base}about/">About Heather</a>
+          <a href="${base}philosophy/">Philosophy</a>
           <details class="mobile-drawer-section">
-            <summary>Services</summary>
+            <summary>Work Together</summary>
             <div class="mobile-drawer-sublinks">
-              <a href="${base}services/coaching/">Transformational Coaching</a>
+              <a href="${base}services/coaching/">Transformational Support</a>
               <a href="${base}services/integration/">Psychedelic Preparation &amp; Integration</a>
-              <a href="${base}services/somatic/">Somatic Healing &amp; Bodywork</a>
-              <a href="${base}services/ceremonial/">Plant Medicine &amp; Ceremonial Support</a>
+              <a href="${base}services/somatic/">Somatic Healing &amp; Therapeutic Bodywork</a>
+              <a href="${base}services/ceremonial/">Ceremonial &amp; Expanded-State Support</a>
               <a href="${base}services/" class="mobile-drawer-sublinks-all">All offerings</a>
             </div>
           </details>
-          <a href="${base}blog/">Writing</a>
-          <a href="${base}contact/" class="mobile-drawer-cta">Begin</a>
+          <a href="${base}blog/">Journal</a>
+          <a href="${base}safety/">Safety &amp; Scope</a>
+          <a href="${base}contact/" class="mobile-drawer-cta">Begin Here</a>
         </nav>
         <p class="mobile-drawer-footer">Illuminated<br><span>Integration</span></p>
       </div>
@@ -88,12 +92,14 @@
       <div class="footer-inner">
         <p class="footer-brand">Illuminated</p>
         <span class="footer-brand-script">Integration</span>
-        <p class="footer-meta">Heather McCan · Trauma-Informed Transformational Coach · Psychedelic Integration Specialist · Certified Addiction Recovery Coach · Licensed Massage Therapist</p>
+        <p class="footer-meta">Heather McCan · Founder, Illuminated Integration · Trauma-Informed Psychedelic Integration Specialist · Ceremonialist · Licensed Massage Therapist · Graduate Student in Psychedelic Therapy</p>
         <p class="footer-links">
           <a href="${base}">Home</a> ·
           <a href="${base}about/">About</a> ·
-          <a href="${base}services/">Services</a> ·
-          <a href="${base}blog/">Writing</a> ·
+          <a href="${base}philosophy/">Philosophy</a> ·
+          <a href="${base}services/">Work Together</a> ·
+          <a href="${base}blog/">Journal</a> ·
+          <a href="${base}safety/">Safety &amp; Scope</a> ·
           <a href="${base}contact/">Contact</a>
         </p>
         <p class="footer-social">
@@ -102,7 +108,7 @@
             <span>@illuminated.integration</span>
           </a>
         </p>
-        <p class="footer-disclaimer">This work is not a substitute for medical or psychiatric care. If you are in immediate crisis, please contact a licensed provider or call <a href="tel:988">988</a> (Suicide &amp; Crisis Lifeline).</p>
+        <p class="footer-disclaimer">Illuminated Integration is not an emergency, crisis, medical, or psychiatric service. If you are in immediate danger or may harm yourself or someone else, call 911 or go to the nearest emergency department. In the United States, call or text <a href="tel:988">988</a> for the Suicide &amp; Crisis Lifeline. Services offered here are educational, supportive, integrative, somatic, and coaching-based within Heather's current professional scope, and do not replace diagnosis, medical care, psychiatric treatment, psychotherapy, or emergency services. Read more on the <a href="${base}safety/">Safety &amp; Scope</a> page.</p>
         <p class="footer-fine">© ${year} Illuminated Integration. All rights reserved. · <a href="${base}privacy/" style="color:inherit;opacity:0.7;">Privacy Policy</a></p>
       </div>
     </footer>

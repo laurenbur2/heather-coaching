@@ -1435,6 +1435,12 @@ section.section:nth-of-type(even) {
 .page-hero-blog .page-hero-photo {
   background-image: url('https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=2400');
 }
+.page-hero-philosophy .page-hero-photo {
+  background-image: url('https://images.pexels.com/photos/1179229/pexels-photo-1179229.jpeg?auto=compress&cs=tinysrgb&w=2400');
+}
+.page-hero-safety .page-hero-photo {
+  background-image: url('https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=2400');
+}
 
 /* Service detail page heroes */
 .page-hero-coaching .page-hero-photo {
